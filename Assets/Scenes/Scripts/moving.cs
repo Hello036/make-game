@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 100f;
+    public float moveSpeed = 30f;
     public float jumpForce = 7f;
     public float gravityScale = 2.5f;
     public float turnSmoothTime = 0.3f;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // 수평축과 수직축 입력값
         float horizontal = Input.GetAxis("Horizontal");
