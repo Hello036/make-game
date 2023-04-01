@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 30f;
+    public float moveSpeed = 20f;
     public float jumpForce = 7f;
     public float gravityScale = 2.5f;
     public float turnSmoothTime = 0.3f;
